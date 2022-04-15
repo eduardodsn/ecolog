@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Ecolog",
+    "slug": "Ecolog",
+    "scheme": "ecolog",
+    "version": "1.1.4",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1A5F7A"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.eduardodsn.Ecolog",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAZyLyhEUKs4XBhGTU0iVvRIMdSBp2764U"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
