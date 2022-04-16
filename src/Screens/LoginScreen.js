@@ -10,8 +10,8 @@ import LoginImage from '../../assets/images/first-screen.png'
 import GoogleIcon from '../../assets/images/google.png'
 
 
-const windowWidth = Dimensions.get('window').width;
-const windowHeight = Dimensions.get('window').height;
+const windowWidth = Dimensions.get('screen').width;
+const windowHeight = Dimensions.get('screen').height;
 
 export default function LoginScreen({ navigation }) {
 
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     },
     loginButton: {
         width: '85%',
-        marginTop: -120,
+        marginTop: -165,
         paddingVertical: 13,
         backgroundColor: 'white',
         borderRadius: 10,

@@ -10,7 +10,8 @@ export default function OtherInfo({ navigation }) {
         <View style={styles.contentContainer}>
             <Text style={styles.title}>Outros</Text>
             <View style={styles.descriptionContainer}>
-                <Text style={styles.description}>As lixeiras nas cores verde, vermelho, amarelo, azul e marrom são as mais comumente encontradas em pontos estratégicos dos lugares públicos e privados com grande fluxo de pessoas. Contudo, há ainda outras 4 cores de lixeiras que são mais incomuns de serem encontradas. São elas:</Text>
+                <Text style={styles.description}>
+                    As lixeiras nas cores verde, vermelho, amarelo, azul e marrom são as mais comumente encontradas em pontos estratégicos dos lugares públicos e privados com grande fluxo de pessoas. Contudo, há ainda outras 4 cores de lixeiras que são mais incomuns de serem encontradas. São elas:</Text>
                 <Unorderedlist>
                     <Text style={styles.listItem}>
                         <Text style={styles.highlight}>Lixeira Preta</Text> para materiais feitos de madeira.
@@ -31,8 +32,9 @@ export default function OtherInfo({ navigation }) {
                         <Text style={styles.highlight}>Lixeira Cinza </Text>cujo rejeito não pode ser separado ou está contaminado.
                     </Text>
                 </Unorderedlist>
-
+                
                 <Text style={styles.description}>
+                {'\n'}
                     <Text style={styles.highlight}>Dicas: </Text>não descartar ossos, óleo, graxa, gordura, remédios, produtos químicos.
                 </Text>
             </View>
@@ -48,20 +50,17 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         backgroundColor: '#E7CAF9',
-        paddingHorizontal: 40,
-        paddingVertical: 40,
+        paddingHorizontal: 20,
+        paddingVertical: 20,
         justifyContent: 'space-between'
     },
     title: {
         fontFamily: 'Poppins_700Bold',
         fontSize: 30,
     },
-    descriptionContainer: {
-
-    },
     description: {
         fontFamily: 'Poppins_400Regular',
-        paddingTop: 30,
+        paddingBottom: 20,
         textAlign: 'justify'
     },
     highlight: {

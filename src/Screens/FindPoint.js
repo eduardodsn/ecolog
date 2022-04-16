@@ -32,7 +32,7 @@ export default function FindPoint({navigation, route}) {
         })();
     }, [isFocused]);
     
-    return <>
+    return <View style={styles.screenContainer}>
         <View style={styles.titleContainer}>
             <Text style={styles.title}>Pontos de coleta</Text>
             <Text style={styles.description}>Pesquise pontos de coleta nas redondezas</Text>
@@ -82,13 +82,17 @@ export default function FindPoint({navigation, route}) {
                 })
             }
         </MapView>
-    </>
+    </View>
 }
 
 const styles = StyleSheet.create({
+    screenContainer: {
+        width: Dimensions.get('screen').width,
+        height: Dimensions.get('screen').height
+    },
     titleContainer: {
         width: Dimensions.get('window').width,
-        height: '18%',
+        height: '16%',
         backgroundColor: '#fff',
         paddingHorizontal: 30,
         paddingVertical: 20

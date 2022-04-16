@@ -26,20 +26,17 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         backgroundColor: '#BCD7FF',
-        paddingHorizontal: 40,
-        paddingVertical: 40,
+        paddingHorizontal: 20,
+        paddingVertical: 20,
         justifyContent: 'space-between'
     },
     title: {
         fontFamily: 'Poppins_700Bold',
         fontSize: 30,
     },
-    descriptionContainer: {
-
-    },
     description: {
         fontFamily: 'Poppins_400Regular',
-        paddingTop: 30,
+        paddingBottom: 20,
         textAlign: 'justify'
     },
     highlight: {
